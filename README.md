@@ -1,9 +1,61 @@
 # Getting Started with Create React App
 
-`npx create-react-app@latest hello-react-front-end`
 
-`https://github.com/facebook/create-react-app/issues/11816`
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+> Now that you're familiar with Rails and React, it's time to put them together in a new kind of 'Hello World!' app. This exercise is going to have you create a React front-end with a Rails back-end and connect them to display a random message.
+
+
+## Learning objectives
+
+- Implement a connection between a Ruby on Rails back-end and React front-end.
+- Understand pros and cons of different approaches of connecting Ruby on Rails back-end with React front-end.
+
+
+## Getting Started
+
+To get a local copy for this project and running follow these simple example steps.
+
+
+## Setup
+
+### Creating the hello-rails-react
+
+```bash
+$   rails new hello-rails-back-end --api --database=postgresql
+$   cd hello-rails-back-end # Move into the application directory
+```
+
+```bash
+$   npx create-react-app@latest hello-react-front-end
+$   cd  hello-react-front-end # Move into the application directory
+```
+
+
+- Now run these commands to install everything.
+
+```bash
+$   bundle install
+$   rails webpacker:install
+$   rails new rails-react-tutorial --webpack=react -d=postgresql
+$   rails webpacker:install:react
+$   rails generate react:install
+$   yarn install
+```
+
+### Clone this repository
+
+```bash
+$ https://github.com/BenMukebo/hello-react-front-end.git
+$ cd hello-react-front-end
+```
+
+### Create the database
+
+```bash
+$   rails db:create   # or
+$   rake db:create
+```
 
 ## Available Scripts
 
@@ -32,42 +84,89 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+`https://github.com/facebook/create-react-app/issues/11816`
+
+
+
+
+
+
+### Install linter and 
+
+- Rubocop gem
+
+```bash
+$  bundle init
+$  bundle install
+```
+- Stylelint package
+
+```bash
+$  npm init -y
+$  npm install
+$  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+```
+
+- Run linter
+
+```bash
+$  rubocop .
+$  npx stylelint "**/*.{css,scss}" 
+```
+
+- In auto-correct mode, RuboCop will try to automatically fix offenses:
+
+```bash
+$  rubocop -A # or
+$  rubocop --auto-correct-all
+$  npx stylelint "**/*.{css,scss}" --fix 
+```
+
+
+## Built With
+
+This project is build with:
+
+-  ![Ruby](https://img.shields.io/badge/-Ruby-000000?style=flat&logo=ruby&logoColor=red)
+-  ![Ruby on Rails](https://img.shields.io/badge/-Ruby_on_Rails-000000?style=flat&logo=ruby-on-rails&logoColor=blue)
+- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+
+## Authors
+
+👤 **Ben Mukebo**
+
+- GitHub: [@BenMukebo](https://github.com/BenMukebo)
+- Twitter [@BenMukebo](https://twitter.com/BenMukebo)
+- LinkedIn [BenMukebo](https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/)
+
+## 🤝 Contributor
+
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/BenMukebo/hello-react-front-end/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Credit to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), the author of the original [design guidelines](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
