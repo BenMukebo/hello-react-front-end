@@ -9,7 +9,6 @@ const Greeting = () => {
 
   const handleClick = () => {
     dispatch(fetchmessage());
-    console.log('hi there');
   };
 
   return (
