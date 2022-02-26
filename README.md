@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+`npx create-react-app@latest hello-react-front-end`
+
+`https://github.com/facebook/create-react-app/issues/11816`
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
