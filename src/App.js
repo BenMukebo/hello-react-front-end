@@ -9,7 +9,7 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route exact path="" element={<Greeting />} />
+          <Route exact path="/" element={<Greeting />} />
         </Routes>
       </BrowserRouter>
     </Provider>
