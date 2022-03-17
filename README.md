@@ -72,7 +72,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 `https://github.com/facebook/create-react-app/issues/11816`
 
+### Host the app
 
+- heroku login 
+- git remote remove heroku
+- heroku create benmukebo-api    
+- git push heroku intgration-tests:main
+- heroku run rails db:migrate 
+- heroku run rails db:seed    
 
 ### Install linter and 
 
